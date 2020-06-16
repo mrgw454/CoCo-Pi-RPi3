@@ -22,6 +22,12 @@ https://www.mamedev.org/
 XRoar:
 https://www.6809.org.uk/xroar/
 
+Toolshed:
+https://sourceforge.net/p/toolshed/wiki/Home/
+
+Motorola 6809 dev tools:
+https://launchpad.net/~tormodvolden/+archive/ubuntu/m6809
+
 pyDriveWire:
 https://github.com/n6il/pyDriveWire
 
@@ -42,3 +48,7 @@ https://github.com/EtchedPixels/FUZIX
 
 NitrOS9 EOU:
 http://www.lcurtisboyle.com/nitros9/nitros9.html
+
+TRS-80 Color Computer Archive:
+https://colorcomputerarchive.com/
+
