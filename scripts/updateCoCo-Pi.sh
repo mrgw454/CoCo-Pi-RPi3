@@ -11,7 +11,3 @@ echo -e
 echo -e
 read -p "Press any key to continue... " -n1 -s
 echo -e
-<<<<<<< HEAD
-=======
-
->>>>>>> baf3e74b778bc4441c410ca742117145794239a8
