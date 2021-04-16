@@ -13,6 +13,8 @@ git fetch --all
 git reset --hard origin/master
 git pull origin master
 
+chmod a+x $HOME/scripts/*.sh
+
 echo -e
 echo -e
 read -p "Press any key to continue... " -n1 -s
