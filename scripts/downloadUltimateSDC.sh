@@ -27,7 +27,7 @@ echo -e
 echo -e
 echo -e "Downloading SDC Image file..."
 echo -e
-wget -c -P /media/share1/SDC $SDCIMAGE
+wget --no-use-server-timestamps -c -P /media/share1/SDC $SDCIMAGE
 
 cd /media/share1/SDC
 
