@@ -54,9 +54,14 @@
     "51" "Load      HDB-DOS via Cassette Cable" \
     "52" "Start     X-Windows Desktop" \
     "53" "Stop      X-Windows Desktop" \
-    "54" "Reboot    Raspberry Pi" \
-    "55" "Shutdown  Raspberry Pi" \
-    "56" "Return to Main Menu" \
+    "54" "Edit      RVPN config" \
+    "55" "Start     RVPN network daemon" \
+    "56" "Stop      RVPN network daemon" \
+    "57" "View      RVPN network log" \
+    "58" "Show      RVPN network status" \
+    "59" "Reboot    Raspberry Pi" \
+    "60" "Shutdown  Raspberry Pi" \
+    "61" "Return to Main Menu" \
     3>&1 1>&2 2>&3)
 
     # Below you can enter the corresponding commands
@@ -115,8 +120,13 @@
         51) cloadm-hdbdos.sh && CoCoPi-menu-Utilities.sh;;
         52) start-desktop.sh && CoCoPi-menu-Utilities.sh;;
         53) stop-desktop.sh && CoCoPi-menu-Utilities.sh;;
-        54) rebootRPi.sh;;
-        55) shutdownRPi.sh;;
-        56) menu;;
+        54) editRVPN.sh && CoCoPi-menu-Utilities.sh;;
+        55) $HOME/rvpn/startRVPN.sh && CoCoPi-menu-Utilities.sh;;
+        56) $HOME/rvpn/stopRVPN.sh && CoCoPi-menu-Utilities.sh;;
+        57) viewRVPN-log.sh && CoCoPi-menu-Utilities.sh;;
+        58) statusRVPN.sh && CoCoPi-menu-Utilities.sh;;
+        59) rebootRPi.sh;;
+        60) shutdownRPi.sh;;
+        61) menu;;
         *) echo "Quitting...";;
     esac
