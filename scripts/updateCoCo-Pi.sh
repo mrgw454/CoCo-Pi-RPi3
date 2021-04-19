@@ -13,7 +13,11 @@ git fetch --all
 git reset --hard origin/master
 git pull origin master
 
+# make sure all scripts/menus remain executable after any updates
 chmod a+x $HOME/scripts/*.sh
+chmod a+x $HOME/.mame/*.sh
+chmod a+x $HOME/.mame/menu
+chmod a+x $HOME/.xroar/*.sh
 
 echo -e
 echo -e
